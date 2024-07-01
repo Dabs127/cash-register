@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Cash register</title>
+</head>
+<body>
+    <h1>Cash Register</h1>
+    <main>
+        <div id="computer">
+            <div id="screen-container">
+                <div id="screen">
+                    <p>Enter cash from customer: </p>
+                    <input id="cash" type="number" />
+                    <button id="purchase-btn">Purchase</button>
+                    <p id="total-price">Total: </p>
+                    <p id="change-due"></p>
+                </div>
+            </div>
+            <div id="square-computer"></div>
+            <div id="rectangle-computer"></div>
+        </div>
+        
+        <section id="cash-register">
+            <div id="card-part">
+                <div id="keyboard">
+                    <div class="keyboard-button"></div>
+                    <div class="keyboard-button"></div>
+                    <div class="keyboard-button"></div>
+                    <div class="keyboard-button"></div>
+                    <div class="slice-card"></div>
+                </div>
+            </div>
+            <div id="change-in-drawer">
+                <div class="drawer-container">
+                    <div class="images-container" data-coinname="PENNY">
+                        <img class="coin" src="img/penny.png" alt="Penny Image">
+                        <img class="coin" src="img/penny.png" alt="Penny Image">
+                        <img class="coin" src="img/penny.png" alt="Penny Image">
+                        <img class="coin" src="img/penny.png" alt="Penny Image">
+                        <img class="coin" src="img/penny.png" alt="Penny Image">
+                        <img class="coin" src="img/penny.png" alt="Penny Image">
+                    </div>
+    
+                    <span>Pennies: </span>
+                </div>
+                <div class="drawer-container">
+                    <div class="images-container" data-coinname="NICKEL">
+                        <img class="coin" src="img/nickel.png" alt="Nickel Image">
+                        <img class="coin" src="img/nickel.png" alt="Nickel Image">
+                        <img class="coin" src="img/nickel.png" alt="Nickel Image">
+                        <img class="coin" src="img/nickel.png" alt="Nickel Image">
+                        <img class="coin" src="img/nickel.png" alt="Nickel Image">
+                        <img class="coin" src="img/nickel.png" alt="Nickel Image">
+                    </div>
+    
+                    <span>Nickels: </span>
+                </div>
+                <div class="drawer-container">
+                    <div class="images-container" data-coinname="DIME">
+                        <img class="coin" src="img/dime.png" alt="Dime Image">
+                        <img class="coin" src="img/dime.png" alt="Dime Image">
+                        <img class="coin" src="img/dime.png" alt="Dime Image">
+                        <img class="coin" src="img/dime.png" alt="Dime Image">
+                        <img class="coin" src="img/dime.png" alt="Dime Image">
+                        <img class="coin" src="img/dime.png" alt="Dime Image">
+                    </div>
+    
+                    <span>Dimes: </span>
+                </div>
+                <div class="drawer-container">
+                    <div class="images-container" data-coinname="QUARTER">
+                        <img class="coin" src="img/quarter.png" alt="Quarter Image">
+                        <img class="coin" src="img/quarter.png" alt="Quarter Image">
+                        <img class="coin" src="img/quarter.png" alt="Quarter Image">
+                        <img class="coin" src="img/quarter.png" alt="Quarter Image">
+                        <img class="coin" src="img/quarter.png" alt="Quarter Image">
+                        <img class="coin" src="img/quarter.png" alt="Quarter Image">
+                    </div>
+    
+    
+                    <span>Quarters: </span>
+                </div>
+                <div class="drawer-container">
+                    <div class="images-container" data-coinname="ONE">
+                        <img class="bill" src="img/oneDollar.jpg" alt="One dollar Image">
+                        <img class="bill" src="img/oneDollar.jpg" alt="One dollar Image">
+                        <img class="bill" src="img/oneDollar.jpg" alt="One dollar Image">
+                        <img class="bill" src="img/oneDollar.jpg" alt="One dollar Image">
+                        <img class="bill" src="img/oneDollar.jpg" alt="One dollar Image">
+                        <img class="bill" src="img/oneDollar.jpg" alt="One dollar Image">
+                    </div>
+    
+    
+                    <span>Ones: </span>
+                </div>
+                <div class="drawer-container">
+                    <div class="images-container" data-coinname="FIVE">
+                        <img class="bill" src="img/fiveDollar.jpg" alt="Five dollar Image">
+                        <img class="bill" src="img/fiveDollar.jpg" alt="Five dollar Image">
+                        <img class="bill" src="img/fiveDollar.jpg" alt="Five dollar Image">
+                        <img class="bill" src="img/fiveDollar.jpg" alt="Five dollar Image">
+                        <img class="bill" src="img/fiveDollar.jpg" alt="Five dollar Image">
+                        <img class="bill" src="img/fiveDollar.jpg" alt="Five dollar Image">
+                    </div>
+    
+                    <span>Fives: </span>
+                </div>
+                <div class="drawer-container">
+                    <div class="images-container" data-coinname="TEN">
+                        <img class="bill" src="img/tenDollar.jpg" alt="Ten dollar Image">
+                        <img class="bill" src="img/tenDollar.jpg" alt="Ten dollar Image">
+                        <img class="bill" src="img/tenDollar.jpg" alt="Ten dollar Image">
+                        <img class="bill" src="img/tenDollar.jpg" alt="Ten dollar Image">
+                        <img class="bill" src="img/tenDollar.jpg" alt="Ten dollar Image">
+                        <img class="bill" src="img/tenDollar.jpg" alt="Ten dollar Image">
+                    </div>
+    
+                    <span>Tens: </span>
+                </div>
+                <div class="drawer-container">
+                    <div class="images-container" data-coinname="TWENTY">
+                        <img class="bill" src="img/twentyDollar.jpg" alt="Twenty dollar Image">
+                        <img class="bill" src="img/twentyDollar.jpg" alt="Twenty dollar Image">
+                        <img class="bill" src="img/twentyDollar.jpg" alt="Twenty dollar Image">
+                        <img class="bill" src="img/twentyDollar.jpg" alt="Twenty dollar Image">
+                        <img class="bill" src="img/twentyDollar.jpg" alt="Twenty dollar Image">
+                        <img class="bill" src="img/twentyDollar.jpg" alt="Twenty dollar Image">
+                    </div>
+    
+                    <span>Twenties: </span>
+                </div>
+                <div class="drawer-container">
+                    <div class="images-container" data-coinname="ONE HUNDRED">
+                        <img class="bill" src="img/onehundredDollar.jpg" alt="One hundred dollar Image">
+                        <img class="bill" src="img/onehundredDollar.jpg" alt="One hundred dollar Image">
+                        <img class="bill" src="img/onehundredDollar.jpg" alt="One hundred dollar Image">
+                        <img class="bill" src="img/onehundredDollar.jpg" alt="One hundred dollar Image">
+                        <img class="bill" src="img/onehundredDollar.jpg" alt="One hundred dollar Image">
+                        <img class="bill" src="img/onehundredDollar.jpg" alt="One hundred dollar Image">
+                    </div>
+                    
+                    <span>Hundreds: </span>
+                </div>
+
+            </div>
+        </section>
+    </main>
+    
+
+    <script src="script.js"></script>
+</body>
+</html>
